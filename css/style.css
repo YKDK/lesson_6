@@ -1,0 +1,305 @@
+/* Ширина сторінки singlepost 1920px */
+body {
+  max-width: 1920px;
+}
+
+/* Хедер не верстається, але він є з заданими розмірами, їх треба врахувати */
+header {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 15px 0 15px 0;
+  max-width: 1230px;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px rebeccapurple;
+  background: rgb(250, 253, 212);
+  border-radius: 10px;
+  box-shadow:0 0 3px rgb(233, 240, 132), inset 0 0 3px rgb(233, 240, 132);
+  visibility: hidden;
+}
+
+/* / основний блок з домашки */
+.main-blok {
+  max-width: 810px;
+  margin-left: 345px;
+  margin-bottom: 50px;
+  font-family: "Lato";
+  color: #1E212C;
+}
+
+/* невидимий блок, його не треба верстати але він впливає на відступи тому додаю і роблю невидимим */
+.first-block {
+  width: 207px;
+  height: 26px;
+  overflow: auto;
+  visibility: hidden;
+}
+
+/* блок з заголовком */
+#title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 60px;
+  margin-bottom: 90px;
+  max-height: 130px;
+}
+
+/* фото розміри по ширині контенту */
+.image img{
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 63px;
+  
+}
+
+
+/* опис контенту */
+/* .description {
+} */
+
+/* заголовок контенту */
+.description-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  max-height: 90px;
+  overflow: auto;
+  margin-bottom: 25px;
+  color: #424551;
+}
+
+
+
+.description-article {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+/* відстаь вниз до другого абзацу */
+.text {
+  margin-bottom: 40px;
+}
+
+
+.quote {
+  max-width: 752px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 48px 0 48px 58px;  
+  color: #1E212C;
+}
+
+/* список  */
+.list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.list-title {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.list-text {
+  margin-bottom: 24px;
+}
+
+.list-text li {
+  text-indent: 32px;
+}
+
+
+
+/* домашка */
+
+/* блок №1 */
+.site {
+  max-width: 1920px;
+}
+.news {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  max-width: 1230px;
+  background: rgba(209, 208, 236, 0.459);
+  outline: 1px solid rgb(206, 200, 200);
+  box-shadow: 5px 5px 20px #000;
+  border-radius: 20px;
+}
+
+.image-sport {
+  display:inline-block;
+  max-width: 400px;
+}
+
+.image-sport img {
+  display: block;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.sport {
+  display: inline;
+
+}
+
+.news-ukraine {
+  border: 1px solid rgb(181, 187, 102);
+  width: 400px;
+  min-height: 50px;
+  overflow: auto;
+  display: inline-block;
+  margin: 10px 50px 100px 50px;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: blue;
+  text-shadow: 1px 1px 5px rgb(33, 10, 235);
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 200px rgb(169, 185, 26), 1px 1px 5px rgb(169, 185, 26);
+
+}
+
+.news-sport {
+  border: 1px solid rgb(13, 14, 14);
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.726),2px 2px 3px rgba(0, 0, 0, 0.849);
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px;
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+  margin: 10px 20px 20px 0px;
+  text-align: justify;
+  text-indent: 20px;
+  color: rgb(69, 48, 148);
+  text-shadow: 1px 1px 1px rgb(229, 245, 13);
+
+}
+
+/* блок №2 */
+.news+p{
+  min-width: 200px;
+  max-width: 200px;
+  padding: 25px;
+  border: 10px solid rgba(228, 225, 43, 0.5);
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(255, 251, 0);
+  text-shadow: 1px 2px 10px rgb(9, 6, 240);
+  border-radius: 25px 50px 50px 25px;
+  background: yellow;
+  box-shadow:inset 3px 3px 5px rgb(25, 10, 233), -3px -3px 5px rgb(157, 158, 145) ;
+  margin-bottom: 25px;
+}
+
+.news~ul {
+  display: block;
+  border: 25px solid rgba(0, 0, 255, 0.555);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wrap{
+  border: 0.5px solid rgba(255, 0, 0, 0.534);
+  box-shadow: 1px 1px 2px rgba(255, 0, 0, 0.719), inset 1px 2px 5px red;
+  border-radius: 1px 10px 1px 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  word-spacing: 10px;
+  line-height: 50px;
+  color: rgb(149, 228, 104); 
+  background: rgba(155, 247, 119, 0.404);
+}
+
+ul ol{
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+}
+
+ol li{
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: rgb(251, 255, 0);
+  box-shadow: 5px 5px 0 #000;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 35px;
+  margin: 15px;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  font-size: 25px;
+  opacity: 0.5;
+}
+
+.instaram {
+  opacity: 1;
+  width: 200px;
+  height: 100px;
+  border-radius: 50px;
+  background: tomato;
+  border: none;
+  box-shadow: inset 2px 2px 5px rgb(240, 183, 99);
+  font-family: monospace;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color:rebeccapurple;
+  font-size: 30px;
+  padding-left: 15px;
+  text-shadow: 2px 0 5px red;
+
+}
+
+.basement {
+  margin-left: 345px; 
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  border: 1px solid #000;
+}
+
+.contacts,
+.link {
+  display: inline-block;
+  max-width: 400px;
+  margin: 10px 0 10px 80px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 900px;
+  text-align: center;
+  text-shadow: -1px 2px 5px rgb(47, 26, 238);
+  padding: 15px;
+  border-radius: 20px;
+  color: rgb(12, 8, 253);
+  background: rgb(199, 188, 30);
+  box-shadow: 3px 3px 10px rgba(15, 15, 15, 0.5), inset 1px 2px 5px rgba(131, 123, 11, 0.5);
+
+}
